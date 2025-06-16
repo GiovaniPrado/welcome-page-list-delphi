@@ -1,0 +1,56 @@
+package Pyahu.WelcomePageList;
+
+{$R *.res}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO OFF}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DEFINE DEBUG}
+{$ENDIF IMPLICITBUILDING}
+{$DESCRIPTION 'Embarcadero Welcome Page Demo Plugin'}
+{$IMPLICITBUILD ON}
+
+requires
+  rtl,
+  vcl,
+  designide;
+
+contains
+  Pyahu.WelcomePageList.View.Settings in 'View\Pyahu.WelcomePageList.View.Settings.pas' {FormSettings},
+  Pyahu.WelcomePageList.View.FrameImageList in 'View\Pyahu.WelcomePageList.View.FrameImageList.pas' {FrameImageList: TFrame},
+  Pyahu.WelcomePageList.View.OpenProject in 'View\Pyahu.WelcomePageList.View.OpenProject.pas' {FormOpenFile},
+  Pyahu.WelcomePageList.View.CaptionFrame in 'View\Pyahu.WelcomePageList.View.CaptionFrame.pas' {WelcomePagePlugInCaptionFrame: TFrame},
+  Pyahu.WelcomePageList.Model.ItemData in 'Model\Pyahu.WelcomePageList.Model.ItemData.pas',
+  Pyahu.WelcomePageList.DAO.IniFile in 'DAO\Pyahu.WelcomePageList.DAO.IniFile.pas',
+  Pyahu.WelcomePageList.DAO.ItemDataIniFile in 'DAO\Pyahu.WelcomePageList.DAO.ItemDataIniFile.pas',
+  Pyahu.WelcomePageList.DAO.SettingsIniFile in 'DAO\Pyahu.WelcomePageList.DAO.SettingsIniFile.pas',
+  Pyahu.WelcomePageList.Model.Constants in 'Model\Pyahu.WelcomePageList.Model.Constants.pas',
+  Pyahu.WelcomePageList.Utils.WelcomePagePathUtils in 'Utils\Pyahu.WelcomePageList.Utils.WelcomePagePathUtils.pas',
+  Pyahu.WelcomePageList.Utils in 'Utils\Pyahu.WelcomePageList.Utils.pas',
+  Pyahu.WelcomePageList.Model.PlugInItemData in 'Model\Pyahu.WelcomePageList.Model.PlugInItemData.pas',
+  Pyahu.WelcomePageList.Model.PlugInModel in 'Model\Pyahu.WelcomePageList.Model.PlugInModel.pas',
+  Pyahu.WelcomePageList.Model.PluginCreator in 'Model\Pyahu.WelcomePageList.Model.PluginCreator.pas',
+  Pyahu.WelcomePageList.PluginRegister in 'Pyahu.WelcomePageList.PluginRegister.pas',
+  Pyahu.WelcomePageList.Resources in 'Resources\Pyahu.WelcomePageList.Resources.pas' {WelcomePageResources: TDataModule},
+  Pyahu.WelcomePageList.Enum.EnumConverter in 'Enum\Pyahu.WelcomePageList.Enum.EnumConverter.pas',
+  Pyahu.WelcomePageList.Enum.OrderBy in 'Enum\Pyahu.WelcomePageList.Enum.OrderBy.pas';
+
+end.
