@@ -10,7 +10,7 @@ A plugin designed to make viewing recently opened and favorite projects more enj
 - Sort items in ascending and descending order
 - Assign images to the project to make it easier to view in the list
 
-##⚙️ Installation
+## ⚙️ Installation
 
 1. Download or clone the repository
 2. Open the "welcome-page-list-delphi\source\Pyahu.WelcomePageList.dproj" project in Delphi
